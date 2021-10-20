@@ -1,3 +1,9 @@
+Aplikasi SITARU v2 dikembangkan menggunakan PostgreSQL untuk menangani basisdata spasial, non-spasial maupun manajemen akses akun aplikasi. Bahasa yang digunakan adalah SQL. Penggunaan SQL memberikan konsekuensi bahwa setiap data spasial maupaun non-spasial yang dikelola dalam SITARU v2 harus jelas struktur datanya, apa saja kelengkapan atribut data dan bagaimana penulisannya. Apabila terdapat perubahan struktur data dikemudian hari maka harus dilakukan penyesuian pada sisi beckend dan hal ini tidak akan mengganggu sistem yang sudah berjalan. 
+
+File ERD_Matrix_ITBX.pdf dan ERD_Matrix_ITBX.xlsx menyajikan informasi relasi antar tabel yang mendukung SITARU v2. Apabila kedepannya terdapat perubahan regulasi yang mengakibatkan penyesuaian isi dari Matrix ITBX maka dapat langsung diakomodasi dengan mengupdate record/ row pada tabel terkait.
+
+sitaru_db.sql merupakan backup dari database yang berisi tabel tabel ITBX dengan relasinya
+
 # scalar function ITBX Query
 CREATE OR REPLACE FUNCTION public.fnget_kodeizin(
 	fnget_keterangan_tipekegiatan character varying,
