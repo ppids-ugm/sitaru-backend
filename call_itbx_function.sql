@@ -1,0 +1,1 @@
+select fnget_kodeizin('PENGHIJAUAN','Taman Lingkungan','Cagar Budaya Bersejarah & Pengetahuan');
